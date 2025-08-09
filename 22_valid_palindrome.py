@@ -1,5 +1,5 @@
 def is_palindrome(s):
-    pal_str = ("".join(char for char in s if char.isalpha()).lower())
+    pal_str = ("".join(char for char in s if char.isalnum()).lower())
     left = 0
     right = len(pal_str) - 1
 
