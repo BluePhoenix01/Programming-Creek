@@ -1,4 +1,4 @@
-def is_isomorphic(s, t):
+def isIsomorphic(s, t):
     if s == t:
         return True
     if len(s) != len(t):
@@ -9,6 +9,6 @@ def is_isomorphic(s, t):
         return False
     return True
 
-print(is_isomorphic("egg", "add"))
-print(is_isomorphic("foo", "bar"))
-print(is_isomorphic("paper", "title"))
+print(isIsomorphic("egg", "add"))
+print(isIsomorphic("foo", "bar"))
+print(isIsomorphic("paper", "title"))

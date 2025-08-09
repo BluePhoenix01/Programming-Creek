@@ -1,11 +1,11 @@
-def rotate_array_python(nums, k):
+def rotateArrayPython(nums, k):
     n = len(nums)
     k = k % n
     nums = nums[n - k :] + nums[: n - k]
     return nums
 
 
-def rotate_array(nums, k):
+def rotateArray(nums, k):
     n = len(nums)
     k = k % n
     for i in range(k):
@@ -22,7 +22,7 @@ def reverse(arr, start, end):
         start += 1
         end -= 1
 
-def rotate_array_reverse(nums, k):
+def rotateArrayReverse(nums, k):
     n = len(nums)
     k = k % n
     k %= n
@@ -42,5 +42,5 @@ if __name__ == "__main__":
         arr.append(element)  # or int(element) for integers
 
     k = int(input("Enter the number of rotations: "))
-    rotated_arr = rotate_array_python(arr, k)
+    rotated_arr = rotateArrayPython(arr, k)
     print("Rotated array:", rotated_arr)

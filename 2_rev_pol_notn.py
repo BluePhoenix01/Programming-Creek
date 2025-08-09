@@ -1,4 +1,4 @@
-def is_integer(s):
+def isInteger(s):
     try:
         int(s)
         return True
@@ -8,7 +8,7 @@ def is_integer(s):
 def evalRPN(tokens):
     stack = []
     for token in tokens:
-        if is_integer(token):
+        if isInteger(token):
             stack.append(int(token))
         else:
             a = stack.pop()

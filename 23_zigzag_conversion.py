@@ -1,4 +1,4 @@
-def zigzag_conversion(s, rows):
+def zigzagConversion(s, rows):
     if rows == 1:
         return s
     zigzag = ""
@@ -19,6 +19,6 @@ def zigzag_conversion(s, rows):
 
     return zigzag
 
-print(zigzag_conversion("PAYPALISHIRING", 3))  # Output: "PAHNAPLSIIGYIR"
-print(zigzag_conversion("PAYPALISHIRING", 4))  # Output: "PINALSIGYAHRPI"
-print(zigzag_conversion("12345432123454321", 5)) 
+print(zigzagConversion("PAYPALISHIRING", 3))  # Output: "PAHNAPLSIIGYIR"
+print(zigzagConversion("PAYPALISHIRING", 4))  # Output: "PINALSIGYAHRPI"
+print(zigzagConversion("12345432123454321", 5)) 

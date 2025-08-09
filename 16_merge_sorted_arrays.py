@@ -19,7 +19,7 @@ def merge(arr1, arr2):
         j += 1
     return merged
 
-def merge_sorted_arrays(arr1, arr2):
+def mergeSortedArrays(arr1, arr2):
     i = len(arr1) - 1
     j = len(arr2) - 1
     k = i + j + 1
@@ -37,4 +37,4 @@ def merge_sorted_arrays(arr1, arr2):
     return merged
 
 # print(merge([1, 3, 5], [2, 4, 6]))  # Output: [1, 2, 3, 4, 5, 6]
-print(merge_sorted_arrays([1, 3, 5], [2, 4, 6]))  # Output: [1, 2, 3, 4, 5, 6]
+print(mergeSortedArrays([1, 3, 5], [2, 4, 6]))  # Output: [1, 2, 3, 4, 5, 6]

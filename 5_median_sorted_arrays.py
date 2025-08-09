@@ -1,4 +1,4 @@
-def median_sorted_arrays(nums1, nums2):
+def medianSortedArrays(nums1, nums2):
     merged = nums1 + nums2
     merged.sort()
     n = len(merged)
@@ -10,6 +10,6 @@ def median_sorted_arrays(nums1, nums2):
 
     
     
-print(median_sorted_arrays([1, 3], [2]))
-print(median_sorted_arrays([1, 2], [3, 4]))
+print(medianSortedArrays([1, 3], [2]))
+print(medianSortedArrays([1, 2], [3, 4]))
 

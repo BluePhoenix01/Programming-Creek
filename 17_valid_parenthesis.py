@@ -1,4 +1,4 @@
-def is_valid_parenthesis(s):
+def isValidParenthesis(s):
     stack = []
     mapping = {'(': ')', '[': ']', '{': '}'}
     print(f"Input string: {s}")
@@ -14,6 +14,6 @@ def is_valid_parenthesis(s):
     return not stack
 
 # print(is_valid_parenthesis("()[]{}"))  # Output: True
-print(is_valid_parenthesis("(]"))      # Output: False
+print(isValidParenthesis("(]"))      # Output: False
 # print(is_valid_parenthesis("([)]"))    # Output: False
 # print(is_valid_parenthesis("{[]}"))    # Output: True

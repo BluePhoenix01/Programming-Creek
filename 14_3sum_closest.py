@@ -1,4 +1,4 @@
-def sum3_closest(nums, target):
+def sum3Closest(nums, target):
     nums.sort()
     diff = float('inf')
     min_set = []
@@ -16,6 +16,6 @@ def sum3_closest(nums, target):
 
     return min_set
 
-print(sum3_closest([-1, 2, 1, -4], 1))
-print(sum3_closest([0, 0, 0], 1))
-print(sum3_closest([1, 2, 3, 4], 10))
+print(sum3Closest([-1, 2, 1, -4], 1))
+print(sum3Closest([0, 0, 0], 1))
+print(sum3Closest([1, 2, 3, 4], 10))

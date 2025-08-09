@@ -1,4 +1,4 @@
-def merge_intervals(intervals):
+def mergeIntervals(intervals):
     if not intervals:
         return []
     intervals.sort(key=lambda x: x[0])
@@ -15,5 +15,5 @@ def merge_intervals(intervals):
     merged.append([start, end])
     return merged
     
-print(merge_intervals([[1,3],[2,6],[8,10],[15,18]]))
+print(mergeIntervals([[1,3],[2,6],[8,10],[15,18]]))
     

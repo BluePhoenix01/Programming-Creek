@@ -1,4 +1,4 @@
-def is_word_ladder(start, end, dict):
+def isWordLadder(start, end, dict):
     visited = set()
     queue = [(start, 1)]
     while queue:
@@ -14,4 +14,4 @@ def is_word_ladder(start, end, dict):
     return 0
 
 
-print(is_word_ladder('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log', 'cog']))                    
+print(isWordLadder('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log', 'cog']))                    
