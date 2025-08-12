@@ -12,5 +12,11 @@ def reverseWords(s):
             j = i
     return reversed_words
 
+def reverseWordsPython(s):
+    words = s.split()
+    return " ".join(reversed(words))
+
 print(reverseWords("  Hello World  "))
 print(reverseWords("Python is fun"))
+
+print(reverseWordsPython("  Hello World  "))
