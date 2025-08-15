@@ -6,7 +6,7 @@ def largestNum(nums):
     right = 1
  
     while right < len(nums):
-        if int(nums[right - 1] + nums[right]) < int(nums[right] + nums[right - 1]):
+        while int(nums[right - 1] + nums[right]) < int(nums[right] + nums[right - 1]):
             nums[right - 1], nums[right] = nums[right], nums[right - 1]
         right += 1    
     max_num = ''.join(nums)
@@ -15,6 +15,4 @@ def largestNumLambda(nums):
     return (lambda nums: ''.join(sorted(map(str, nums), key=lambda x: x*10, reverse=True)))(nums)
 
 print(largestNum([3, 30, 34, 5, 9]))  # Output: "9534330"
-
-
-
+print(largestNum([10, 2]))  # Output: "210"
