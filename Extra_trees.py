@@ -17,7 +17,6 @@ class BinaryTree:
             self._add_leaf(self.root, new_node)
 
     def _add_leaf(self, curr, new_node):
-        print(f"Adding {new_node.val} to the tree")
         if curr is None:
             return new_node
         if new_node.val < curr.val:
@@ -139,12 +138,12 @@ class AVLTree:
         print()
 
 # Balanced Tree
-tree = AVLTree(0)
-tree.add_leaf(1)
-tree.add_leaf(2)
-tree.add_leaf(3)
-tree.add_leaf(4)
-tree.add_leaf(5)
+# tree = AVLTree(0)
+# tree.add_leaf(1)
+# tree.add_leaf(2)
+# tree.add_leaf(3)
+# tree.add_leaf(4)
+# tree.add_leaf(5)
 
 # Binary Tree
 # tree = BinaryTree(0)
@@ -155,5 +154,5 @@ tree.add_leaf(5)
 # tree.add_leaf(5)
 # tree.add_leaf(4)
 
-print("Binary Tree:")
-tree.print_tree()
+# print("Binary Tree:")
+# tree.print_tree()
