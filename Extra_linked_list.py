@@ -28,8 +28,8 @@ class ReverseLinkedListIterator:
             return None
         return self.stack.pop()  
 
-print("Example usage:")
-ll = LinkedList([1, 2, 3, 4, 5])
-iterator = ReverseLinkedListIterator(ll.head)
-while iterator.hasNext():
-    print(iterator.next(), end=" ")
+# print("Example usage:")
+# ll = LinkedList([1, 2, 3, 4, 5])
+# iterator = ReverseLinkedListIterator(ll.head)
+# while iterator.hasNext():
+#     print(iterator.next(), end=" ")
