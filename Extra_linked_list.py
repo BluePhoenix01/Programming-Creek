@@ -11,6 +11,13 @@ class LinkedList:
             current.next = Node(value)
             current = current.next
 
+    def print_list(self):
+        current = self.head
+        while current:
+            print(current.value, end=" -> ")
+            current = current.next
+        print("None")
+
 class ReverseLinkedListIterator:
     def __init__(self, head):
         # collect all nodes into a stack
