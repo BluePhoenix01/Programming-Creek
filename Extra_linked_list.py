@@ -5,11 +5,14 @@ class Node:
 
 class LinkedList:
     def __init__(self, values = None):
-        self.head = Node(values[0]) if values else None
-        current = self.head
-        for value in values[1:]:
-            current.next = Node(value)
-            current = current.next
+        if not values:
+            self.head = None
+        else:
+            self.head = Node(values[0])
+            current = self.head
+            for value in values[1:]:
+                current.next = Node(value)
+                current = current.next
 
     def print_list(self):
         current = self.head
